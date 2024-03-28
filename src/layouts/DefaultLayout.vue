@@ -1,21 +1,36 @@
 <script setup lang="ts">
 import AppBar from './components/AppBar.vue'
 import NaviDrawer from './components/NaviDrawer.vue'
-import BottomNavi from './components/BottomNavi.vue'
 import { RouterView } from 'vue-router'
 </script>
 <template>
-    <v-app>
-        <!-- App bar -->
-        <AppBar></AppBar>
-
-        <!-- Navigation Drawer -->
-        <NaviDrawer></NaviDrawer>
-
-        <v-main class="container">
-            <slot>
-                <RouterView></RouterView>
-            </slot>
-        </v-main>
-    </v-app>
+    <div class="common-layout">
+        <el-container>
+            <el-header>
+                <AppBar></AppBar>
+            </el-header>
+            <el-divider style="margin: 0;" />
+            <el-container>
+                <el-aside width="300px">
+                    <el-scrollbar>
+                        <NaviDrawer></NaviDrawer>
+                    </el-scrollbar>
+                </el-aside>
+                <el-main>
+                    <slot>
+                        <RouterView />
+                    </slot>
+                </el-main>
+            </el-container>
+        </el-container>
+    </div>
 </template>
+<style scoped lang="scss">
+header {
+    display: flex;
+}
+
+aside {
+    min-height: calc(100vh - 60px);
+}
+</style>

@@ -1,35 +1,36 @@
 <template>
-    <v-app-bar :elevation="2">
-        <template v-slot:prepend>
-            <v-app-bar-nav-icon></v-app-bar-nav-icon>
-        </template>
-        <v-app-bar-title>Bee Home</v-app-bar-title>
-        <template v-slot:append>
-            <div class="action-item">
-                <v-text-field
-                    append-inner-icon="mdi-magnify"
-                    density="compact"
-                    label="Type your demand service"
-                    variant="solo"
-                    hide-details
-                    single-line
-                    :clearable="true"
-                    rounded
-                ></v-text-field>
-            </div>
-            <v-avatar>
-                <v-img alt="John" src="https://cdn.vuetifyjs.com/images/john.jpg"></v-img>
-            </v-avatar>
-        </template>
-    </v-app-bar>
+    <div class="container-logo item">
+        <el-button class="tag" icon="Expand" circle />
+        <el-text class="tag" type="primary" tag="b" size="large">Bee Home</el-text>
+    </div>
+
+    <div class="action-item item">
+        <el-input class="tag" style="width: 240px" placeholder="Type your demand" suffix-icon="Search" />
+        <el-avatar class="tag" :size="50" src="">
+            <img src="https://cube.elemecdn.com/e/fd/0fc7d20532fdaf769a25683617711png.png" />
+        </el-avatar>
+    </div>
+
 </template>
 
 <script setup lang="ts"></script>
 
 <style scoped lang="scss">
-.action-item {
-    min-width: 22rem;
-    padding-right: 2rem;
+.item {
+    display: flex;
+    align-items: center;
 }
 
+.tag {
+    margin: 10px 10px;
+}
+
+.container-logo,
+.action-item {
+    flex: 1;
+}
+
+.action-item {
+    justify-content: flex-end;
+}
 </style>

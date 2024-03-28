@@ -14,10 +14,11 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "element-plus": "^2.6.2",
     "pinia": "^2.1.7",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "vuetify": "^3.5.12"
+    "vue-router": "^4.3.0"
   },
   "devDependencies": {
     "@mdi/font": "^7.4.47",

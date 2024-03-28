@@ -2,9 +2,10 @@ import { createMemoryHistory, createRouter, type RouteRecord, type RouteRecordRa
 
 import DefaultLayout from '@/layouts/DefaultLayout.vue'
 import VisitorLayout from '@/layouts/VisitorLayout.vue'
+import LoginPage from '@/views/auth/LoginPage.vue'
 
 const routes : Readonly<RouteRecordRaw[]> = [
-  { path: '/', component: VisitorLayout },
+  { path: '/', component: LoginPage },
 ]
 
 export default createRouter({

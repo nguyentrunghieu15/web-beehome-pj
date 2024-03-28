@@ -11,7 +11,6 @@ import LoginForm from '@/components/auth/LoginForm.vue'
 
         <v-main> 
             <RouterView></RouterView>
-            <LoginForm></LoginForm>
         </v-main>
     </v-app>
 </template>

@@ -6,20 +6,24 @@
             <el-card style="border-radius: 10px;">
                 <template #header>
                     <div class="card-header">
-                        <span>Sign In</span>
+                        <span>Create account</span>
                     </div>
                 </template>
                 <div class="card-body">
-                    <TextField label="Email or mobile phone number" :is-require="true"
+                    <TextField label="Your name" :is-require="true"
+                        @input="(value: string) => { input = value }" errors="" class="item">
+                    </TextField>
+                    <TextField label="Mobile number or email" :is-require="true"
+                        @input="(value: string) => { input = value }" errors="" class="item">
+                    </TextField>
+                    <TextField label="Password" :is-require="true"
+                        @input="(value: string) => { input = value }" errors="" class="item">
+                    </TextField>
+                    <TextField label="Re-enter password" :is-require="true"
                         @input="(value: string) => { input = value }" errors="" class="item">
                     </TextField>
                     <el-button type="primary" round style="width: 100%;" class="item">Continue</el-button>
-                    <div class="help-item">
-                        <el-button type="warning" link icon="ArrowRightBold" @click="isNeed = !isNeed">Need
-                            help?</el-button>
-                        <el-button type="warning" link v-if="isNeed">Forgot your password?</el-button>
-                        <el-button type="warning" link v-if="isNeed">Other issues with Sign-In</el-button>
-                    </div>
+
                 </div>
                 <template #footer>
                     <p>
@@ -28,8 +32,8 @@
                     </p>
                 </template>
             </el-card>
-            <el-divider content-position="center">New to BeeHome?</el-divider>
-            <el-button style="width: 100%;"  round>Create your account BeeHome</el-button>
+            <el-divider content-position="center" >Have accont BeeHome?</el-divider>
+            <el-button style="width: 100%;"  round>Sign in BeeHome</el-button>
         </div>
 
     </div>
@@ -72,21 +76,8 @@ const isNeed = ref(false)
     margin-bottom: 14px;
 }
 
-.help-item {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: start;
-    margin-top: 18px;
-    font-size: 13px
-}
-
-.help-item button {
-    margin: 4px 0px 0px;
-    padding: 0px 0px 0px 11px;
-}
-
 :deep(.el-divider__text ){
     background-color: rgb(243, 245, 242);
+    padding: 0px
 }
 </style>
