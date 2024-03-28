@@ -1,12 +1,7 @@
 <template>
-  <div>
-    <RouterView></RouterView>
-  </div>
+    <div class="w-full h-full">
+        <RouterView></RouterView>
+    </div>
 </template>
 
-<style scoped>
-div {
-  height: 100vh;
-  width: 100vw;
-}
-</style>
+<style scoped></style>

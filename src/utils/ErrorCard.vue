@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
     <v-card
       dark
       class="mx-auto"
@@ -89,4 +89,4 @@
       this.$router.go(-1);
     }
   };
-  </script>
+  </script> -->

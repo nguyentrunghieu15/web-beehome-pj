@@ -1,6 +1,5 @@
 <template>
-    <!-- <LoginForm></LoginForm> -->
-    <RegisterForm></RegisterForm>
+    <LoginForm></LoginForm>
 </template>
 
 <script setup lang="ts">

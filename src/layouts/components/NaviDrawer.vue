@@ -1,5 +1,4 @@
 <template>
-    <h5>Dash Board</h5>
     <el-menu>
         <el-sub-menu index="1">
             <template #title>
