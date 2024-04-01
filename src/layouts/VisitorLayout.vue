@@ -10,9 +10,7 @@
                     <el-button link class="hover:underline">Explore</el-button>
                 </div>
                 <div class="mx-4">
-                    <RouterLink to="/signup" class="hover:underline text-gray-600"
-                        >Sign up</RouterLink
-                    >
+                    <RouterLink to="/signup" class="hover:underline text-gray-600">Sign up</RouterLink>
                 </div>
                 <div class="mx-4">
                     <RouterLink to="/login" class="hover:underline text-gray-600">Login</RouterLink>
@@ -38,8 +36,8 @@
             <div class="mb-6">
                 <el-text tag="b">
                     <p class="font-bold">BeeHome</p>
-                    Consider it done.</el-text
-                >
+                    Consider it done.
+                </el-text>
             </div>
             <div class="mb-2 hover:underline">
                 <el-text class="hover:text-blue-700" size="small" type="info">About</el-text>
@@ -54,7 +52,9 @@
                 <el-text size="small" class="hover:text-blue-700" type="info">Blog</el-text>
             </div>
             <div class="mb-2 flex">
-                <el-icon class="mr-2"><CameraFilled /></el-icon>
+                <el-icon class="mr-2">
+                    <CameraFilled />
+                </el-icon>
                 <img src="./../assets/twitter.svg" class="w-4 h-4 mr-2" />
                 <img src="./../assets/facebook.svg" class="w-4 h-4 mr-2" />
             </div>
@@ -64,9 +64,7 @@
                 <el-text tag="b"> Customers</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" type="info" size="small"
-                    >How to use BeeHome</el-text
-                >
+                <el-text class="hover:text-blue-700" type="info" size="small">How to use BeeHome</el-text>
             </div>
             <div class="mb-2 hover:underline">
                 <el-text class="hover:text-blue-700" size="small" type="info">Sign up</el-text>
@@ -75,32 +73,22 @@
                 <el-text class="hover:text-blue-700" size="small" type="info">Get the app</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Services near me</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Services near me</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Cost estimates</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Cost estimates</el-text>
             </div>
             <div class="mb-2 hover:underline">
                 <el-text size="small" type="info">Home resource center</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Home inspiration pictures</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Home inspiration pictures</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Small business survey</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Small business survey</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Questions and answers</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Questions and answers</el-text>
             </div>
         </div>
         <div class="flex flex-col justify-start">
@@ -108,40 +96,28 @@
                 <el-text tag="b">Pros</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" type="info" size="small"
-                    >BeeHome for pros</el-text
-                >
+                <el-text class="hover:text-blue-700" type="info" size="small">BeeHome for pros</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Sign up as a pro</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Sign up as a pro</el-text>
             </div>
             <div class="mb-2 hover:underline">
                 <el-text class="hover:text-blue-700" size="small" type="info">Community</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Pro Resources</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Pro Resources</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Success stories</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Success stories</el-text>
             </div>
             <div class="mb-2 hover:underline">
                 <el-text class="hover:text-blue-700" size="small" type="info">Pro reviews</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >iPhone app for pros</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">iPhone app for pros</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Android app for pros</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Android app for pros</el-text>
             </div>
         </div>
 
@@ -159,19 +135,14 @@
                 <el-text class="hover:text-blue-700" size="small" type="info">Terms of Use</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Privacy Policy</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Privacy Policy</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >CA Notice at Collection</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">CA Notice at Collection</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Do not Sell or Share My Personal Information</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Do not Sell or Share My Personal
+                    Information</el-text>
             </div>
         </div>
         <div class="flex flex-col justify-start">
@@ -179,19 +150,16 @@
                 <el-text tag="b">Related Links</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" type="info" size="small"
-                    >Find a tax preparer near New York, NY</el-text
-                >
+                <el-text class="hover:text-blue-700" type="info" size="small">Find a tax preparer near New York,
+                    NY</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Find a mobile dog groomer near you</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Find a mobile dog groomer near
+                    you</el-text>
             </div>
             <div class="mb-2 hover:underline">
-                <el-text class="hover:text-blue-700" size="small" type="info"
-                    >Find a Mobile Notary near Manhattan, NY</el-text
-                >
+                <el-text class="hover:text-blue-700" size="small" type="info">Find a Mobile Notary near Manhattan,
+                    NY</el-text>
             </div>
         </div>
     </div>
@@ -214,7 +182,6 @@ onMounted(() => {
     setInterval(() => {
         text.value = chainText.value[idx]
         idx = (idx + 1) % 4
-        console.log(text)
     }, 2000)
 })
 
@@ -228,19 +195,24 @@ const onClickJoin = () => {
     width: 3.5rem !important;
     display: inline-block;
 }
+
 .homepage-hero_scroll__mBWrd {
     position: relative;
     animation: homepage-hero_scroller__RgPOD 2s ease-in-out infinite;
 }
+
 @keyframes homepage-hero_scroller__RgPOD {
+
     0%,
     90% {
         right: 0;
     }
+
     90%,
     95% {
         right: -0.5em;
     }
+
     95%,
     to {
         right: 0;

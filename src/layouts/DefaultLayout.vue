@@ -18,7 +18,7 @@ import { RouterView } from 'vue-router'
                 </el-aside>
                 <el-main>
                     <slot>
-                        <RouterView />
+                        <RouterView :key="$route.fullPath"/>
                     </slot>
                 </el-main>
             </el-container>

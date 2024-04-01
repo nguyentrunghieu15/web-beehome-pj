@@ -2,6 +2,7 @@ import {
     createMemoryHistory,
     createRouter,
     createWebHashHistory,
+    createWebHistory,
     type RouteRecord,
     type RouteRecordRaw
 } from 'vue-router'
@@ -12,7 +13,7 @@ import LoginPage from '@/views/auth/LoginPage.vue'
 import SignUpPage from '@/views/auth/SignUpPage.vue'
 import Page404 from '@/views/error/Page404.vue'
 
-const routes: Readonly<RouteRecordRaw[]> = [
+const routes = [
     { path: '/', component: VisitorLayout},
     { path: '/login', component: LoginPage },
     { path: '/signup', component: SignUpPage },
@@ -20,7 +21,7 @@ const routes: Readonly<RouteRecordRaw[]> = [
 ]
 
 const router = createRouter({
-    history: createMemoryHistory(),
+    history: createWebHistory(import.meta.env.BASE_URL),
     routes
 })
 

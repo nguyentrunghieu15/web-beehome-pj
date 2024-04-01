@@ -1,6 +1,6 @@
 <template>
     <div class="w-full h-full">
-        <RouterView></RouterView>
+        <RouterView :key="$route.fullPath"></RouterView>
     </div>
 </template>
 

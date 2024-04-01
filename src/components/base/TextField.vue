@@ -1,31 +1,27 @@
 <template>
-    <div style="width: 100%;">
+    <div style="width: 100%">
         <p>
-            <span style="font-weight: bold;">
+            <span style="font-weight: bold">
                 {{ props.label }}
-                <span v-if="props.isRequire" style="color: red;">*</span>
+                <span v-if="props.isRequire" style="color: red">*</span>
             </span>
         </p>
-        <el-input v-model="temp" :placeholder="props.placeholder" style="width: 100%" @input="$emit('input', temp)" />
+        <el-input :placeholder="props.placeholder" style="width: 100%" v-model="value" />
         <p>
-            <span v-if="props.errors" style="color: red;" class="error">! {{ props.errors }}</span>
+            <span v-if="props.errors" style="color: red" class="error">! {{ props.errors }}</span>
         </p>
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
-
 const props = defineProps<{
     label?: string
     placeholder?: string
     isRequire?: boolean
     errors?: string
 }>()
-defineEmits(['input'])
 
-let temp = ref("")
-
+const value = defineModel('value', { required: true, default: '' })
 </script>
 
 <style scoped lang="scss">
